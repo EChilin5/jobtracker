@@ -1,0 +1,15 @@
+.job-tracker-heading h1{
+    font-weight: 700;
+}
+
+.job-tracker-subheading-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+}
+
+.job-tracker-subheading-content{
+    flex: 2;
+    opacity: 0.5;
+    font-weight: 600;
+}

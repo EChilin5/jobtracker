@@ -1,0 +1,9 @@
+.add-new-modal-content modal-content{
+    background-color: #191919;
+}
+
+.modal-content{
+    background-color: #191919;
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+}

@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import JobTrackerChart from "../Components/JobTrackerChart";
+import Button from "react-bootstrap/esm/Button";
+import AddNewJobModal from "../Components/AddNewJobModal";
+import "./JobTracker.css";
 
 const JobTracker = () => {
   let jobs = [
@@ -27,12 +30,30 @@ const JobTracker = () => {
     },
   ];
 
+  const [show, setShow] = useState(false);
+  const [rowSelected, setRowSelected] = useState(0);
+
+  const displayModal = () => setShow(!show);
+
   return (
     <div>
       <div>
+        <AddNewJobModal showModal={show} displayForm={displayModal} />
+      </div>
+      <div className="job-tracker-header">
         <h1>Job Tracker</h1>
       </div>
-      <div>Welcome to your job tracker</div>
+      <div className="job-tracker-subheading-container">
+        <div className="job-tracker-subheading-content">
+          Welcome to your job tracker
+          <br />
+          Click on any row to view job Information
+        </div>
+        <div>
+          <Button onClick={() => displayModal()}>New Job</Button>
+        </div>
+      </div>
+
       <div>
         <JobTrackerChart positions={jobs} />
       </div>
