@@ -1,0 +1,51 @@
+
+.table{
+    /* --bs-table-bg:#191919; */
+    background-color: #191919;
+}
+
+.table-header{
+    font-size: 1rem;
+    font-weight: 200;
+    align-items: center;
+}
+
+.table-content{
+    font-size: 0.9rem;
+    font-weight: 150;
+    height:15vh
+}
+
+.applied{
+    background-color: #8d6cab;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.7rem;
+    text-align: center;
+}
+.hired{
+    background-color: #2b593f;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.7rem;
+    text-align: center;
+}
+
+.waitlisted{
+    background-color: #e68523;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.7rem;
+    text-align: center; 
+}
+
+.rejected{
+    background-color:#dd5143;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.7rem;
+    text-align: center; 
+}
+
+.interview{
+    background-color:#00a0dc;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.7rem;
+    text-align: center; 
+}

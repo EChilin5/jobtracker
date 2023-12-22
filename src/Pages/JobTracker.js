@@ -11,7 +11,7 @@ const JobTracker = () => {
       company: "Google",
       location: "Mountain View",
       role: "software engineer",
-      status: "applied",
+      status: "hired",
       website: "test",
       resume: "test",
       elevator: "Testing 123 43 re",
@@ -23,6 +23,39 @@ const JobTracker = () => {
       location: "Mountain View",
       role: "software engineer",
       status: "applied",
+      website: "test",
+      resume: "test",
+      elevator: "Testing 123 43 re",
+      notes: "testing hosting page etc",
+    },
+    {
+      id: 2,
+      company: "Google",
+      location: "Mountain View",
+      role: "software engineer",
+      status: "rejected",
+      website: "test",
+      resume: "test",
+      elevator: "Testing 123 43 re",
+      notes: "testing hosting page etc",
+    },
+    {
+      id: 3,
+      company: "Google",
+      location: "Mountain View",
+      role: "software engineer",
+      status: "waitlisted",
+      website: "test",
+      resume: "test",
+      elevator: "Testing 123 43 re",
+      notes: "testing hosting page etc",
+    },
+    {
+      id: 4,
+      company: "Google",
+      location: "Mountain View",
+      role: "software engineer",
+      status: "interview",
       website: "test",
       resume: "test",
       elevator: "Testing 123 43 re",
@@ -49,8 +82,8 @@ const JobTracker = () => {
           <br />
           Click on any row to view job Information
         </div>
-        <div>
-          <Button onClick={() => displayModal()}>New Job</Button>
+        <div className="job-tracker-subheading-btn">
+          <button onClick={() => displayModal()}>New Job</button>
         </div>
       </div>
 

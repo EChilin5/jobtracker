@@ -4,6 +4,16 @@
 
 .modal-content{
     background-color: #191919;
-    -webkit-transform: translate3d(50%, 0, 0);
-    transform: translate3d(50%, 0, 0);
+    width: 50%;
+    height:100vh ;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  
+}
+
+.modal-body {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
 }
