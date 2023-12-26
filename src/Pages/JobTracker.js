@@ -3,6 +3,7 @@ import JobTrackerChart from "../Components/JobTrackerChart";
 import Button from "react-bootstrap/esm/Button";
 import AddNewJobModal from "../Components/AddNewJobModal";
 import "./JobTracker.css";
+import JobBoardMain from "../Components/JobBoard/JobBoardMain";
 
 const JobTracker = () => {
   let jobs = [
@@ -89,6 +90,10 @@ const JobTracker = () => {
 
       <div>
         <JobTrackerChart positions={jobs} />
+      </div>
+
+      <div>
+        <JobBoardMain positions={jobs} />
       </div>
     </div>
   );

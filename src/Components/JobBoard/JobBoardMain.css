@@ -1,0 +1,9 @@
+.job-overall-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-overall-content-heading{
+    padding-left: 3%;
+    padding-right: 3%;
+}

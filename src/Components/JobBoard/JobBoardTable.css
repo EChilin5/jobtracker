@@ -1,0 +1,10 @@
+.job-board-table{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-board-table-col{
+    padding-left: 1%;
+    padding-right: 1%;
+    flex: 1;
+}
