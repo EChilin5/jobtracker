@@ -12,7 +12,7 @@ const JobBoardTable = (props) => {
     return temp.map((job) => {
       return (
         <div key={job.id}>
-          <JobBoardCard />
+          <JobBoardCard jobInfo={job} />
         </div>
       );
     });
@@ -39,24 +39,18 @@ const JobBoardTable = (props) => {
         </div>
         <div className="job-board-table-col">
           <div className="job-board-table-header">
-            <h4>Interviewed</h4>
+            <h4>Waitlisted</h4>
           </div>
           <div className="job-board-table-content">
-            {displayJobCards("interview")}
+            {displayJobCards("waitlisted")}
           </div>
         </div>
         <div className="job-board-table-col">
           <div className="job-board-table-header">
-            <h4>Hired</h4>
+            <h4>Interview</h4>
           </div>
           <div className="job-board-table-content">
-            {count.map((test) => {
-              return (
-                <div key={test}>
-                  <JobBoardCard />
-                </div>
-              );
-            })}
+            {displayJobCards("interview")}
           </div>
         </div>
         <div className="job-board-table-col">

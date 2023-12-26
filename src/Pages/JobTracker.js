@@ -20,7 +20,7 @@ const JobTracker = () => {
     },
     {
       id: 1,
-      company: "Google",
+      company: "Drupple",
       location: "Mountain View",
       role: "software engineer",
       status: "applied",
@@ -31,7 +31,7 @@ const JobTracker = () => {
     },
     {
       id: 2,
-      company: "Google",
+      company: "Home Depot",
       location: "Mountain View",
       role: "software engineer",
       status: "rejected",
@@ -42,7 +42,7 @@ const JobTracker = () => {
     },
     {
       id: 3,
-      company: "Google",
+      company: "Yahooo",
       location: "Mountain View",
       role: "software engineer",
       status: "waitlisted",
@@ -53,7 +53,7 @@ const JobTracker = () => {
     },
     {
       id: 4,
-      company: "Google",
+      company: "Microsoft",
       location: "Mountain View",
       role: "software engineer",
       status: "interview",
